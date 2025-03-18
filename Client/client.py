@@ -34,4 +34,11 @@ def start_client():
 
 if __name__ == "__main__":
     start_client()
+    while True:  # Blijf de quiz herstarten totdat de speler stopt
+    start_client()
+    
+    opnieuw = input("Wil je de quiz opnieuw spelen? (ja/nee): ").strip().lower()
+    if opnieuw != "ja":
+        print("Bedankt voor het spelen!")
+        break  # Stop de loop als de speler 'nee' zegt
 
